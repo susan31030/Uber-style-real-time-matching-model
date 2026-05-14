@@ -1,0 +1,67 @@
+ 
+    body{
+    background:#ccc;
+    }
+#viewerContainer{
+      overflow: auto;
+      position: fixed;
+      width: 100vw;
+      height: 100vh;
+      bottom: 0;
+      right: 0%;
+      z-index: 11;
+      /* user-select: none;
+      pointer-events: none; */
+      opacity: 1;
+      box-sizing:content-box;
+}
+#viewerContainer >a      {
+    text-align: center;
+    display: block;
+    font-size: 12px;
+    transform: scale(0.6);
+    color: rgba(0, 0, 0, .2);
+    }
+#viewer{
+  padding: calc(var(--scale-factor) * 10px);
+}
+  #viewer .page{
+  border-radius:10px;
+  overflow:hidden;
+    margin: calc(var(--scale-factor) * 10px) auto;
+    
+  }
+  #viewer .textLayer span{
+  color:rgba(0,0,0,1);
+  }
+    #viewer a {
+  border-bottom: 2px dashed rgba(0, 0, 255, 0.448);
+  color:black;
+  } 
+    .index{
+      max-width: 1000px;
+      margin: 0 auto;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+      .index a{
+        min-width:100px;
+        color:black;
+        display:block;
+        text-align:center;
+        padding:10px;
+      }
+      .index a:visited{
+        opacity:.6
+      }
+      .index a:hover{
+      background:rgba(0,0,0,0.1);
+      border-radius:2px;
+      }
+      .outline a{
+        max-width:600px;
+        color:black;
+        display:block;
+      }
+    *{padding:0;margin:0}body,html{margin:0;padding:0;font-family:sans-serif}img{user-select:none;pointer-events:none}#viewer{padding-bottom:0}#viewerContainer *{box-sizing:content-box}:root{--csstools-color-scheme--light:initial;color-scheme:light dark;--viewer-container-height:0;--pdfViewer-padding-bottom:0;--page-margin:1px auto -8px;--page-border:9px solid transparent;--spreadHorizontalWrapped-margin-LR:-3.5px;--loading-icon-delay:400ms;--csstools-light-dark-toggle--62:var(--csstools-color-scheme--light) #0df;--focus-ring-color:var(--csstools-light-dark-toggle--62, #0060df);--focus-ring-outline:2px solid var(--focus-ring-color)}:root{--xfa-unfocused-field-background:url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");--xfa-focus-outline:auto}:root{--clear-signature-button-icon:url(images/editor-toolbar-delete.svg);--csstools-light-dark-toggle--40:var(--csstools-color-scheme--light) #2b2a33;--signature-bg:var(--csstools-light-dark-toggle--40, #f9f9fb);--csstools-light-dark-toggle--41:var(--csstools-color-scheme--light) var(--signature-bg);--signature-hover-bg:var(--csstools-light-dark-toggle--41, #f0f0f4);--button-signature-bg:transparent;--button-signature-color:var(--main-color);--csstools-light-dark-toggle--42:var(--csstools-color-scheme--light) #5b5b66;--button-signature-active-bg:var(--csstools-light-dark-toggle--42, #cfcfd8);--button-signature-active-border:none;--button-signature-active-color:var(--button-signature-color);--button-signature-border:none;--csstools-light-dark-toggle--43:var(--csstools-color-scheme--light) #52525e;--button-signature-hover-bg:var(--csstools-light-dark-toggle--43, #e0e0e6);--button-signature-hover-color:var(--button-signature-color)}.pdfViewer{--scale-factor:1;--page-bg-color:unset;padding-bottom:var(--pdfViewer-padding-bottom);--hcm-highlight-filter:none;--hcm-highlight-selected-filter:none}@media screen and (forced-colors:active){.pdfViewer{--hcm-highlight-filter:invert(100%)}}.pdfViewer.copyAll{cursor:wait}.pdfViewer .canvasWrapper{overflow:hidden;width:100%;height:100%}:is(.pdfViewer .canvasWrapper) canvas{position:absolute;top:0;left:0;margin:0;display:block;width:100%;height:100%;contain:content}:is(:is(.pdfViewer .canvasWrapper) canvas) .structTree{contain:strict}:is(.pdfViewer .canvasWrapper) img,:is(.pdfViewer .canvasWrapper) svg{position:absolute;top:0;left:0;margin:0;display:block;width:100%;height:100%;contain:content}:is(:is(.pdfViewer .canvasWrapper) img) .structTree{contain:strict}#hiddenCopyElement,.hiddenCanvasElement{position:absolute;top:0;left:0;width:0;height:0;display:none}.pdfViewer .canvasWrapper{overflow:hidden;width:100%;height:100%}.pdfViewer .page{--user-unit:1;--page-same-width:1;--it1:calc(var(--scale-factor) * var(--user-unit) * var(--page-same-width));--scale-round-x:1px;--scale-round-y:1px;width:816px;height:1056px;position:relative;overflow:visible;background-clip:content-box;background-color:var(--page-bg-color,rgb(255 255 255))}.textLayer{position:absolute;text-align:initial;inset:0;overflow:clip;opacity:1;line-height:.86;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;text-size-adjust:none;forced-color-adjust:none;transform-origin:0 0;caret-color:CanvasText;z-index:0}.textLayer.highlighting{touch-action:none}.textLayer :is(span){color:#00f;position:absolute;white-space:pre;cursor:text;transform-origin:0% 0%}.textLayer :is(br){color:transparent;display:none}.textLayer span.markedContent{top:0;height:0}.annotationLayer{position:absolute;top:0;left:0;pointer-events:none;transform-origin:0 0}.annotationLayer{--csstools-color-scheme--light:initial;color-scheme:only light;--annotation-unfocused-field-background:url("data:image/svg+xml;charset=UTF-8,<svg width='1px' height='1px' xmlns='http://www.w3.org/2000/svg'><rect width='100%' height='100%' style='fill:rgba(0, 54, 255, 0.13);'/></svg>");--input-focus-border-color:Highlight;--input-focus-outline:1px solid Canvas;--input-unfocused-border-color:transparent;--input-disabled-border-color:transparent;--input-hover-border-color:black;--link-outline:none}.annotationLayer section{position:absolute;text-align:initial;pointer-events:auto;box-sizing:border-box;transform-origin:0 0;-webkit-user-select:none;-moz-user-select:none;user-select:none}.annotationLayer *{display:none}.annotationLayer .linkAnnotation,.annotationLayer canvas,.annotationLayer img{display:block;width:100%;height:100%}.annotationLayer :is(.linkAnnotation,.buttonWidgetAnnotation.pushButton)>a{display:block;position:absolute;font-size:1em;top:0;left:0;width:100%;height:100%}.annotationLayer :is(.linkAnnotation,.buttonWidgetAnnotation.pushButton):not(.hasBorder)>a:hover{opacity:.2;background-color:rgb(255 255 0);box-shadow:0 2px 10px rgb(255 255 0)}.annotationLayer .linkAnnotation.hasBorder:hover{background-color:rgb(255 255 0 / .2)}.annotationLayer .hasBorder{background-size:100% 100%}.annotationLayer .textAnnotation img{position:absolute;cursor:pointer;width:100%;height:100%;top:0;left:0}.annotationLayer .annotationContent{position:absolute;width:100%;height:100%;pointer-events:none}.freetext:is(.annotationLayer .annotationContent){background:0 0;border:none;inset:0;overflow:visible;white-space:nowrap;font:10px sans-serif;line-height:1.35}:is(.annotationLayer section):has(div.annotationContent) canvas.annotationContent{display:none}
